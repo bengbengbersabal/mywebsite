@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenn Store Sidebar</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="Home/icons/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="menu-list">
+            <label class="logo-name">Moto Parts</label>
+        </div>
+
+        <ul class="menu-list">
+            <li class="active">
+                <a href="#" data-target="dashboard">
+                    <img src="Home/icons/home_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Dashboard">
+                    <label>Dashboard</label>
+                </a>
+            </li>
+            <li>
+                <a href="#" data-target="products">
+                    <img src="Home/icons/storefront_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Products">
+                    <label>Products</label>
+                </a>
+            </li>
+            <li>
+                <a href="#" data-target="information">
+                    <img src="Home/icons/info_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Information">
+                    <label>About Us</label>
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="Login.html" data-target="logout">
+                <img src="Home/icons/user-logout.png" alt="Logout">
+                <label>Logout</label>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="dashboard-container">
+            <div class="welcome-card">
+                <h1>Welcome to our Moto Accesories</h1>
+                <p>A modern e-commerce management system designed for learning and development purposes.</p>
+            </div>
+
+            <div class="info-cards">
+
+                <div class="info-card">
+                    <img src="Home/icons/target.png" class="info-card-icon" alt="K">
+                    <h3 class="info-card-header">PURPOSE</h3>
+                    <p>This website is created for <span class="info-value">educational and project purposes</span>.</p>
+                </div>
+                     <div class="info-card">
+                    <img src="Home/icons/ncbi.png" class="info-card-icon" alt="">
+                    <h3 class="info-card-header">SCHOOL</h3>
+                    <p><span class="info-value">NCBII</span> school that provides our equipments to hands on</p>
+                </div>
+                     <div class="info-card">
+                    <img src="Home/icons/tesda.png" class="info-card-icon" alt="">
+                    <h3 class="info-card-header">TESDA</h3>
+                    <p><span class="info-value">PARTNERSHIP</span> Provided us high quality education and scholarsip</p>
+                </div>
+
+               <div class="info-card">
+                    <img src="Home/icons/sir.jfif" class="info-card-icon" alt="">
+                    <h3 class="info-card-header">INSTRUCTOR</h3>
+                    <p><span class="info-value">Louie Segundo</span> guiding and supervising the development process and
+                        educational objectives.</p>
+                </div>
+
+                <div class="info-card">
+                    <img src="Home/icons/ako.jfif" class="info-card-icon" alt="">
+                    <h3 class="info-card-header">FRONTEND DEVELOPER</h3>
+                    <p><span class="info-value">Kenneth</span> responsible for the Frontend design.</p>
+                </div>
+
+                <div class="info-card">
+                    <img src="Home/icons/bene.jpeg" class="info-card-icon" alt="">
+                    <h3 class="info-card-header">BACKEND DEVELOPER</h3>
+                    <p><span class="info-value">John Benedict</span> responsible for Backend design</p>
+                </div>
+                    <div class="info-card">
+                    <img src="Home/icons/mike.jpg" class="info-card-icon" alt="">
+                    <h3 class="info-card-header">FULLSTACK DEVELOPER</h3>
+                    <p><span class="info-value">Mike</span> responsible in all Area of the website</p>
+                </div>
+
+                    <div class="info-card">
+                    <img src="Home/icons/reildave.jpg" class="info-card-icon" alt="">
+                    <h3 class="info-card-header">CYBERSECURITY</h3>
+                    <p><span class="info-value">Reil Dave</span> responsible for Securing the Website</p>
+                </div>
+                    <div class="info-card">
+                    <img src="Home/icons/crislyn.jpg" class="info-card-icon" alt="">
+                    <h3 class="info-card-header">DATA SCIENTIST</h3>
+                    <p><span class="info-value">Crislyn</span> responsible for Managing Data</p>
+                </div>
+                
+                  <div class="info-card">
+                    <img src="Home/icons/era.jpg" class="info-card-icon" alt="">
+                    <h3 class="info-card-header">DATA ANALYST</h3>
+                    <p><span class="info-value">Era Mae</span> responsible for Analyzing Data</p>
+                </div>
+
+                  <div class="info-card">
+                    <img src="Home/icons/merry.jpg" class="info-card-icon" alt="">
+                    <h3 class="info-card-header">SOFTWARE ENGINEER</h3>
+                    <p><span class="info-value">Merry Grace</span> responsible for the Software Porgram</p>
+                </div>
+                    <div class="info-card">
+                    <img src="Home/icons/isabel.jpg" class="info-card-icon" alt="">
+                    <h3 class="info-card-header">HARDWARE ENGINEER</h3>
+                    <p><span class="info-value">Isabel</span> responsible for the Hardware Components</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCTS PAGE -->
+    <div id="products" class="page">
+        <div class="products-container">
+
+            <!-- Header -->
+            <div class="products-header">
+                <h1>Motorcycle Parts & Accessories</h1>
+                <button class="cart-button" onclick="openCart()">
+                    <img src="Home/icons/shopping-cart.png" class="cart-icon" alt="Cart">
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="category-filters">
+                <button class="category-btn active" onclick="filterCategory('all')">All Products</button>
+                <button class="category-btn" onclick="filterCategory('engine')">Engine Parts</button>
+                <button class="category-btn" onclick="filterCategory('electrical')">Electrical</button>
+                <button class="category-btn" onclick="filterCategory('body')">Body & Frame</button>
+                <button class="category-btn" onclick="filterCategory('accessories')">Accessories</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid"></div>
+
+        </div>
+    </div>
+
+    <!-- PRODUCT DETAIL MODAL -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+
+            <div class="modal-image" id="modalImage"></div>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <div class="modal-price" id="modalPrice"></div>
+
+            <span class="modal-category" id="modalCategory"></span>
+
+            <p class="modal-description" id="modalDescription"></p>
+
+            <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- CART MODAL -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeCart()">&times;</button>
+
+            <h2 class="modal-title">Shopping Cart</h2>
+
+            <div class="cart-items" id="cartItems"></div>
+
+            <div class="cart-total" id="cartTotal"></div>
+        </div>
+    </div>
+
+    <!-- INFORMATION PAGE -->
+    <div id="information" class="page">
+    <div class="resume-container">
+        <div class="resume-border">
+
+            <h2>FOR MORE INFORMATION<br>please contact us!</h2>
+
+            <div class="resume-layout">
+
+                <!-- PERSON CARD -->
+                <div class="layout">
+                    <div class="pic">
+                        <img src="Home/icons/bene.jpeg" alt="John Benedict" width="130">
+                    </div>
+                    <p>
+                        <b>JOHN BENEDICT BERSABAL</b><br>
+                        ADDRESS: Guinacot, Guidulman, Bohol<br>
+                        EMAIL: bersabalbengbeng@gmail.com<br>
+                        CONTACT #: 09876543221
+                    </p>
+                </div>
+
+                <div class="layout">
+                    <div class="pic">
+                        <img src="Home/icons/ako.jfif" alt="Kenneth Berou" width="130">
+                    </div>
+                    <p>
+                        <b>KENNETH BEROU</b><br>
+                        ADDRESS: Canhaway, Guidulman, Bohol<br>
+                        EMAIL: kenn@gmail.com<br>
+                        CONTACT #: 09123456789
+                    </p>
+                </div>
+
+                <div class="layout">
+                    <div class="pic">
+                        <img src="Home/icons/mike.jpg" alt="Mike Auretilla" width="130">
+                    </div>
+                    <p>
+                        <b>MIKE AURESTILLA</b><br>
+                        ADDRESS: Rizal, Talibon, Bohol<br>
+                        EMAIL: mike@gmail.com<br>
+                        CONTACT #: 09543216789
+                    </p>
+                </div>
+
+                <div class="layout">
+                    <div class="pic">
+                        <img src="Home/icons/reildave.jpg" alt="Reildave Garcia" width="130">
+                    </div>
+                    <p>
+                        <b>REILDAVE GARCIA</b><br>
+                        ADDRESS: Poblacion, Talibon, Bohol<br>
+                        EMAIL: reil@gmail.com<br>
+                        CONTACT #: 09123498765
+                    </p>
+                </div>
+
+                <div class="layout">
+                    <div class="pic">
+                        <img src="Home/icons/crislyn.jpg" alt="Crislyn Baay" width="130">
+                    </div>
+                    <p>
+                        <b>CRISLYN BAAY</b><br>
+                        ADDRESS: Rizal, Talibon, Bohol<br>
+                        EMAIL: crislyn@gmail.com<br>
+                        CONTACT #: 09123456789
+                    </p>
+                </div>
+
+                <div class="layout">
+                    <div class="pic">
+                        <img src="Home/icons/era.jpg" alt="Era Mae Salcedo" width="130">
+                    </div>
+                    <p>
+                        <b>ERA MAE SALCEDO</b><br>
+                        ADDRESS: Bagacay, Talibon, Bohol<br>
+                        EMAIL: era@gmail.com<br>
+                        CONTACT #: 09123456789
+                    </p>
+                </div>
+
+                <div class="layout">
+                    <div class="pic">
+                        <img src="Home/icons/merry.jpg" alt="Merry Grace Tampos" width="130">
+                    </div>
+                    <p>
+                        <b>MERRY GRACE TAMPOS</b><br>
+                        ADDRESS: Bagacay, Talibon, Bohol<br>
+                        EMAIL: grace@gmail.com<br>
+                        CONTACT #: 09123456789
+                    </p>
+                </div>
+
+                <div class="layout">
+                    <div class="pic">
+                        <img src="Home/icons/isabel.jpg" alt="Isabel Pacanza" width="130">
+                    </div>
+                    <p>
+                        <b>ISABEL PACANZA</b><br>
+                        ADDRESS: Bagacay, Talibon, Bohol<br>
+                        EMAIL: isabel@gmail.com<br>
+                        CONTACT #: 09123456789
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+    <script src="Home.js"></script>
+</body>
+
+</html>
